@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="canvas-nav">
+        <button class="canvas-nav__save canvas-nav__margin canvas-nav__btn">Сохранить</button>
+
+        <button class="canvas-nav__replay canvas-nav__margin canvas-nav__btn">Показать сохраненное</button>
+
+        <button class="canvas-nav__clear canvas-nav__margin canvas-nav__btn">Очистить</button>
+
+        <div class="range-container canvas-nav__margin">
+            <p class="title-range">Размер маркера: </p>
+            <input type="range" value="1" class="canvas-nav__range">
+            <span class="range-value">0</span>
+        </div>
+        <div class="color-container canvas-nav__margin">
+            <span class="title-value">Цвет маркера:</span>
+            <input type="color" value="#ffffff" class="canvas-nav__color">
+
+            <span class="title-value">Цвет холста:</span>
+            <input type="color" value="#181818" class="canvas-nav__bgColor">
+        </div>
+    </div>
+    <canvas id="canvas" class="canvas">Error</canvas>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
